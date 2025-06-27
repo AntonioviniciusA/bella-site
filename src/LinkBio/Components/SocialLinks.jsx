@@ -14,13 +14,13 @@ const socialLinks = [
     name: "Instagram",
     icon: Instagram,
     color: "from-pink-500 to-rose-500",
-    url: "#",
+    url: "https://www.instagram.com/bellasolucoesoficial",
   },
   {
     name: "Facebook",
     icon: Facebook,
     color: "from-blue-600 to-blue-700",
-    url: "#",
+    url: "https://www.facebook.com/bellasolucoes",
   },
   {
     name: "LinkedIn",
@@ -32,13 +32,13 @@ const socialLinks = [
     name: "YouTube",
     icon: Youtube,
     color: "from-red-600 to-red-700",
-    url: "#",
+    url: "https://www.youtube.com/@bellasolucoesoficial",
   },
   {
     name: "WhatsApp",
     icon: MessageCircle,
     color: "from-green-500 to-green-600",
-    url: "#",
+    url: "https://api.whatsapp.com/send/?phone=%2B556141412287&text&type=phone_number&app_absent=0",
   },
 ];
 
