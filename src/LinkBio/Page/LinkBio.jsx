@@ -10,6 +10,7 @@ import { Footer } from "../Components/Footer";
 import ImageMercadoPago from "../Images/MercadoPago.png";
 import NossosSistemas from "../Images/NossosSistemas.png";
 import Avaliacao from "../Images/Avaliacao.png";
+import Zap from "../Images/Zap.png";
 
 const systems = [
   {
@@ -29,7 +30,7 @@ const systems = [
   {
     title: "Gestão de Pessoas",
     description: "RH completo e folha de pagamento",
-    image: "/placeholder.svg?height=200&width=400",
+    image: Zap,
     color: "from-green-600 to-green-800",
     icon: "Users",
   },

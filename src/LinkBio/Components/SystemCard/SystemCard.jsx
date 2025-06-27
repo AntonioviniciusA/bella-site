@@ -15,7 +15,7 @@ export function SystemCard({
       <div
         className={`group cursor-pointer transition-all duration-300 hover:scale-105 bg-gradient-to-r ${color} rounded-lg shadow-xl`}>
         {/* Container da imagem com borda arredondada e overflow */}
-        <div className="relative h-32 lg:h-40 overflow-hidden rounded-t-lg">
+        <div className="relative h-32 lg:h-40 overflow-hidden rounded-lg">
           <img
             src={image || "/placeholder.svg"}
             alt={title}
