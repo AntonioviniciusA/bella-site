@@ -1,17 +1,21 @@
-"use client";
-
 import { Building2 } from "lucide-react";
 import { FadeIn } from "./Animations";
+import Logo from "../Images/Logo.png";
 
 export function Header() {
   return (
     <div className="text-center pt-8 lg:pt-16 px-4">
       <FadeIn>
         <div className="w-24 h-24 lg:w-32 lg:h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
-          <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-            <Building2 className="w-12 h-12 lg:w-16 lg:h-16 text-blue-600" />
+          <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
+            <img
+              src={Logo.src || Logo}
+              alt="Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
+
         <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
           Bella{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
