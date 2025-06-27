@@ -7,6 +7,7 @@ import { SystemCard } from "../Components/SystemCard/SystemCard";
 import { QuickLinkCard } from "../Components/QuickLinkCard";
 import { ContactButton } from "../Components/ContactButton/ContactButton";
 import { Footer } from "../Components/Footer";
+import ImageMercadoPago from "../Images/MercadoPago.png";
 
 const systems = [
   {
@@ -19,7 +20,7 @@ const systems = [
   {
     title: "Dashboard Analytics",
     description: "Relatórios e métricas em tempo real",
-    image: "/placeholder.svg?height=200&width=400",
+    image: ImageMercadoPago,
     color: "from-purple-600 to-purple-800",
     icon: "BarChart3",
   },

@@ -13,9 +13,9 @@ export function Header() {
           </div>
         </div>
         <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4">
-          Sistemas{" "}
+          Bella{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-            Inteligentes
+            Soluções
           </span>
         </h1>
         <p className="text-slate-300 text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed">
