@@ -8,12 +8,13 @@ import { QuickLinkCard } from "../Components/QuickLinkCard";
 import { ContactButton } from "../Components/ContactButton/ContactButton";
 import { Footer } from "../Components/Footer";
 import ImageMercadoPago from "../Images/MercadoPago.png";
+import NossosSistemas from "../Images/NossosSistemas.png";
 
 const systems = [
   {
     title: "Sistema ERP Completo",
     description: "Gestão integrada para sua empresa",
-    image: "/placeholder.svg?height=200&width=400",
+    image: NossosSistemas,
     color: "from-blue-600 to-blue-800",
     icon: "Building2",
   },
@@ -56,8 +57,10 @@ export default function LinkBio() {
         <SocialLinks />
 
         {/* Main Systems Grid */}
-        <div className="px-4 lg:px-8 mt-12 lg:mt-20">
-          <div className="space-y-4 max-w-2xl mx-auto">
+        <div className="px-8 lg:px-6 mt-12 lg:mt-20">
+          <div className="space-y-4 max-w-lg mx-auto">
+            {" "}
+            {/* Alterado para max-w-lg */}
             {systems.map((system, index) => (
               <SystemCard
                 key={index}
