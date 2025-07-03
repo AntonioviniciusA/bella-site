@@ -35,7 +35,7 @@ const systems = [
     image: Zap,
     color: "from-green-600 to-green-800",
     icon: "Users",
-    url: "https://api.whatsapp.com/message/I4AFSYOST6JKJ1?autoload=1&app_absent=0&utm_campaign=general_link&utm_source=bio_libre",
+    url: "https://api.whatsapp.com/message/I4AFSYOST6JKJ1?autoload=1&app_absent=0&utm_campaign=general_link&utm_source=bio_libre&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20sistema%20de%20Gest%C3%A3o%20de%20Pessoas%20da%20BellaERP.",
   },
   {
     title: "Avaliações",
@@ -52,13 +52,13 @@ const quickLinks = [
     title: "Demonstração Gratuita",
     description: "Veja nossos sistemas em ação",
     color: "from-indigo-600 to-indigo-800",
-    url: "/demo",
+    url: "https://api.whatsapp.com/message/I4AFSYOST6JKJ1?autoload=1&app_absent=0&utm_campaign=general_link&utm_source=bio_libre&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20gratuita%20dos%20sistemas%20BellaERP.",
   },
   {
     title: "Suporte Técnico",
     description: "Atendimento especializado 24/7",
     color: "from-emerald-600 to-emerald-800",
-    url: "/suporte",
+    url: "https://api.whatsapp.com/message/I4AFSYOST6JKJ1?autoload=1&app_absent=0&utm_campaign=general_link&utm_source=bio_libre&text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20o%20suporte%20t%C3%A9cnico%20do%20sistema%20BellaERP.",
   },
 ];
 
@@ -114,7 +114,9 @@ export default function LinkBio() {
 
         {/* Contact Button */}
         <div className="text-center mt-12 lg:mt-16 pb-12">
-          <a href="/contato" className="inline-block">
+          <a
+            href="https://api.whatsapp.com/message/I4AFSYOST6JKJ1?autoload=1&app_absent=0&utm_campaign=general_link&utm_source=bio_libre&text=Ol%C3%A1%2C%20tenho%20interesse%20nos%20sistemas%20da%20BellaERP%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+            className="inline-block">
             <ContactButton delay={(systems.length + quickLinks.length) * 100} />
           </a>
         </div>
