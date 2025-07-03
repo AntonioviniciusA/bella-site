@@ -19,6 +19,7 @@ const systems = [
     image: NossosSistemas,
     color: "from-blue-600 to-blue-800",
     icon: "Building2",
+    url: "https://bellaerp.com.br",
   },
   {
     title: "Dashboard Analytics",
@@ -26,6 +27,7 @@ const systems = [
     image: ImageMercadoPago,
     color: "from-purple-600 to-purple-800",
     icon: "BarChart3",
+    url: "https://www.mercadopago.com.br/revendedores/28a8f04a-5425-4faa-adea-f96f1e707722?utm_source=bio_libre&utm_medium=Referral&utm_campaign=general_link",
   },
   {
     title: "Gestão de Pessoas",
@@ -33,13 +35,15 @@ const systems = [
     image: Zap,
     color: "from-green-600 to-green-800",
     icon: "Users",
+    url: "https://api.whatsapp.com/message/I4AFSYOST6JKJ1?autoload=1&app_absent=0&utm_campaign=general_link&utm_source=bio_libre",
   },
   {
-    title: "Gestão de Pessoas",
-    description: "RH completo e folha de pagamento",
+    title: "Avaliações",
+    description: "Feedback dos nossos clientes",
     image: Avaliacao,
     color: "from-green-600 to-green-800",
     icon: "Users",
+    url: "https://www.google.com/maps/place//data=!4m3!3m2!1s0x935bb8f9588be0d1:0xccf87820884768f0!12e1?source=g.page.m._&utm_source=bio_libre&laa=merchant-review-solicitation",
   },
 ];
 
@@ -48,11 +52,13 @@ const quickLinks = [
     title: "Demonstração Gratuita",
     description: "Veja nossos sistemas em ação",
     color: "from-indigo-600 to-indigo-800",
+    url: "/demo",
   },
   {
     title: "Suporte Técnico",
     description: "Atendimento especializado 24/7",
     color: "from-emerald-600 to-emerald-800",
+    url: "/suporte",
   },
 ];
 
@@ -68,18 +74,20 @@ export default function LinkBio() {
         {/* Main Systems Grid */}
         <div className="px-8 lg:px-6 mt-12 lg:mt-20">
           <div className="space-y-4 max-w-lg mx-auto">
-            {" "}
-            {/* Alterado para max-w-lg */}
             {systems.map((system, index) => (
-              <SystemCard
+              <a
+                href={system.url}
                 key={index}
-                title={system.title}
-                description={system.description}
-                image={system.image}
-                color={system.color}
-                icon={system.icon}
-                delay={index * 100}
-              />
+                className="block hover:scale-[1.02] transition-transform duration-200">
+                <SystemCard
+                  title={system.title}
+                  description={system.description}
+                  image={system.image}
+                  color={system.color}
+                  icon={system.icon}
+                  delay={index * 100}
+                />
+              </a>
             ))}
           </div>
         </div>
@@ -88,21 +96,27 @@ export default function LinkBio() {
         <div className="px-4 lg:px-8 mt-12 lg:mt-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {quickLinks.map((link, index) => (
-              <QuickLinkCard
+              <a
+                href={link.url}
                 key={index}
-                title={link.title}
-                description={link.description}
-                color={link.color}
-                index={index}
-                delay={(systems.length + index) * 100}
-              />
+                className="block hover:scale-[1.02] transition-transform duration-200">
+                <QuickLinkCard
+                  title={link.title}
+                  description={link.description}
+                  color={link.color}
+                  index={index}
+                  delay={(systems.length + index) * 100}
+                />
+              </a>
             ))}
           </div>
         </div>
 
         {/* Contact Button */}
         <div className="text-center mt-12 lg:mt-16 pb-12">
-          <ContactButton delay={(systems.length + quickLinks.length) * 100} />
+          <a href="/contato" className="inline-block">
+            <ContactButton delay={(systems.length + quickLinks.length) * 100} />
+          </a>
         </div>
 
         <Footer />
